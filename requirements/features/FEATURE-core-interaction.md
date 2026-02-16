@@ -21,6 +21,9 @@ The primary interface for Kylo Note is a sidebar Chat View where users interact 
 - [ ] **Context Injection:** When a file is active, the agent is aware of its content (or path) if requested.
 - [ ] **Mentions:** Typing `@` triggers a file search; selecting a file adds its content/path to the context window.
 - [ ] **Chat History:** Conversation history persists within the session (or per note, depending on UX decision - assume session for MVP).
+- [ ] **Follow-up Suggestions:** After the agent responds, Kylo Note can present 2–4 suggested next prompts.
+- [ ] **Task Resume:** Users can resume the last task/session from persisted state.
+- [ ] **Tool Call Timeline:** Tool executions are displayed as structured cards in the transcript (tool name + inputs + result summary).
 
 ## Success Criteria
 - SC-01: User can switch modes in < 2 clicks.

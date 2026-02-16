@@ -22,6 +22,15 @@ A centralized system for managing LLM providers (OpenAI, Anthropic, Gemini, Open
 - [ ] **Token Counting:** accurately estimates input/output tokens for major providers.
 - [ ] **Cost Estimation:** Calculates cost based on known pricing tables (configurable).
 - [ ] **Usage View:** A UI component exists (e.g., in status bar or panel) showing current usage.
+- [ ] **Budget Limits:** Users can configure warning thresholds and hard stops (optional) for:
+  - per task
+  - per session
+  - per day (optional)
+- [ ] **Rate Limit Handling:** If a provider returns rate limit or quota errors, Kylo Note:
+  - shows a clear error message
+  - optionally retries with backoff
+  - can suggest switching provider/model
+- [ ] **Fallback Model (optional):** If the current model is unavailable/out-of-quota, Kylo Note can route to a configured fallback model (user-approved).
 
 ## Success Criteria
 - SC-01: Switching providers takes effect immediately without reload.

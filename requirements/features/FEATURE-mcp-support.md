@@ -20,7 +20,10 @@ Implements the Model Context Protocol (MCP) Client within Kylo Note. This allows
 - [ ] **Client Implementation:** Kylo Note connects to configured servers on startup/demand.
 - [ ] **Tool Registration:** Tools exposed by MCP servers appear in the agent's context.
 - [ ] **Resource Access:** Agent can read resources exposed by MCP servers.
+- [ ] **Transports:** Supports at least stdio-based local servers for MVP; SSE/HTTP is a P1/P2 extension.
+- [ ] **Per-Mode Enablement:** Users can enable/disable MCP servers per Mode.
 - [ ] **Error Handling:** Connection failures to MCP servers are reported but don't crash the plugin.
+- [ ] **Governance:** MCP tool calls go through the same approval and logging pipeline as built-in tools.
 
 ## Success Criteria
 - SC-01: Agent successfully executes a tool from a standard MCP server (e.g., `fetch` from `mcp-server-fetch`).

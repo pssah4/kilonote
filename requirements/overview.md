@@ -29,12 +29,15 @@ Build a local-only, agentic operating layer for Obsidian that clones the "Kilo C
 |---|---|---|---|
 | P0 | CORE-01 | Agent Interaction & Modes | `requirements/features/FEATURE-core-interaction.md` |
 | P0 | CORE-02 | Context Management (Active Files) | `requirements/features/FEATURE-context-management.md` |
+| P0 | CORE-04 | Custom Instructions, Modes, and Rules | `requirements/features/FEATURE-custom-instructions-modes-rules.md` |
 | P0 | GOV-01 | Approval System & Safety | `requirements/features/FEATURE-approval-safety.md` |
 | P0 | GOV-02 | Local Checkpoints & Restore | `requirements/features/FEATURE-checkpoints.md` |
 | P0 | OPS-01 | Vault Operations (CRUD) | `requirements/features/FEATURE-vault-ops.md` |
 | P0 | OPS-02 | Controlled Content Editing | `requirements/features/FEATURE-content-editing.md` |
 | P1 | EXT-01 | MCP Support (Extensibility) | `requirements/features/FEATURE-mcp-support.md` |
 | P1 | CORE-03 | Provider & Cost Management | `requirements/features/FEATURE-provider-management.md` |
+| P1 | CORE-05 | Browser Tool (Web Session + URL Fetch) | `requirements/features/FEATURE-browser-tool.md` |
+| P1 | CORE-06 | Attachments, Clipboard, and Images | `requirements/features/FEATURE-attachments-clipboard-images.md` |
 | P0 | VIS-01 | Canvas Graph Projection | `requirements/features/FEATURE-canvas-projection.md` |
 | P1 | KNOW-01 | Semantic Index & Retrieval | `requirements/features/FEATURE-semantic-index.md` |
 | P1 | FLOW-01 | Workflow Engine & Skills | `requirements/features/FEATURE-workflows.md` |

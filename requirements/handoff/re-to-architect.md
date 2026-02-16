@@ -4,6 +4,7 @@ Date: 2026-02-16
 
 ## P0/P1 Feature List
 - **Core:** Interaction Modes, Context Awareness (Active File/Tabs), Provider Management.
+- **Core (added for parity):** Custom Instructions / Custom Modes / Vault Rules; Browser Tool; Attachments (Images/Clipboard).
 - **Extensibility:** MCP Support (Client).
 - **Ops:** Vault CRUD, Content Editing, Canvas Projection.
 - **Governance:** Approval System, Local Checkpoints (git).
@@ -39,6 +40,24 @@ Date: 2026-02-16
 ## Risks & Dependencies
 - **Risk:** MCP servers requiring full Node.js environment might struggle in restricted Electron contexts (need detailed technical feasibility check).
 - **Risk:** Large vaults (>10k notes) choking the semantic indexer.
+- **Risk:** Browser/URL fetch may require sandboxing and explicit network permissions to preserve local-first/privacy guarantees.
+
+## Parity Notes vs `origin/forked-kilocode`
+Evidence: `requirements/forked-kilocode-filetree.md`
+
+Upstream capabilities that are now explicitly captured in requirements:
+- Custom Instructions / Custom Modes / Rules: `requirements/features/FEATURE-custom-instructions-modes-rules.md`
+- Browser tool & URL fetch: `requirements/features/FEATURE-browser-tool.md`
+- Attachments / clipboard / images: `requirements/features/FEATURE-attachments-clipboard-images.md`
+- Budget limits + rate limit handling: updated in `requirements/features/FEATURE-provider-management.md`
+- Context condensing + truncation transparency: updated in `requirements/features/FEATURE-context-management.md`
+- Follow-up suggestions + task resume: updated in `requirements/features/FEATURE-core-interaction.md`
+- Auto-approval limits: updated in `requirements/features/FEATURE-approval-safety.md`
+
+Upstream capabilities intentionally not pulled into Kylo Note MVP (local-only Obsidian scope):
+- Team/cloud billing and org dashboards
+- Full IDE autocomplete/inline completion stack
+- Telemetry/analytics pipelines (may be added later)
 
 ## ORCHESTRATOR SUMMARY (<= 15 lines)
 - Scope: MVP Clone of Kilo Code for Obsidian.
