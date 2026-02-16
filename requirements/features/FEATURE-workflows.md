@@ -15,7 +15,7 @@ A system for chaining prompts and tools into reusable "Skills" or "Workflows." T
 - As a user, I want to edit skills easily if I don't like the output.
 
 ## Acceptance Criteria
-- [ ] **Skill Definition:** A standard format (e.g., YAML frontmatter + prompt text) for defining a skill in a dedicated folder (`.kilonote/skills`).
+- [ ] **Skill Definition:** A standard format (e.g., YAML frontmatter + prompt text) for defining a skill in a dedicated folder (`.obsidian-agent/skills`).
 - [ ] **Execution:** The agent can load a skill by name and execute its prompt instructions.
 - [ ] **Discovery:** The UI lists available skills for the user to select.
 - [ ] **Parameters:** Skills can accept inputs (e.g., "target file").

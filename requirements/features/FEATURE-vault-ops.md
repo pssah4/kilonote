@@ -20,7 +20,7 @@ A comprehensive set of tools (`read_file`, `write_file`, `list_files`, `search_f
 - [ ] **Create Folder:** Creates nested directories if needed.
 - [ ] **List Files:** Returns file paths (optionally recursive).
 - [ ] **Search Files:** Returns file paths matching a text query (using Obsidian cache or separate index).
-- [ ] **Safety:** All operations respect `.kilonoteignore`.
+- [ ] **Safety:** All operations respect `.obsidian-agentignore`.
 
 ## Success Criteria
 - SC-01: Agent can read/write any Markdown file in the vault.

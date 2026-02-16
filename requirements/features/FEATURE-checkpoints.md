@@ -3,7 +3,7 @@ Priority: P0
 Related Epic: `requirements/epics/EPIC-governance.md`
 
 ## Description
-Every approved write tool execution triggers a pre-write "snapshot" using a local isomorphic-git shadow repository (`.kilonote/checkpoints`). This creates a per-action commit history, enabling users to:
+Every approved write tool execution triggers a pre-write "snapshot" using a local isomorphic-git shadow repository (`.obsidian-agent/checkpoints`). This creates a per-action commit history, enabling users to:
 1. Preview the diff (before/after) of the proposed change if desired.
 2. Revert the file to its state before the tool execution if the result is bad.
 
@@ -17,7 +17,7 @@ Every approved write tool execution triggers a pre-write "snapshot" using a loca
 - As a user, I want this checkpointing to be invisible to my main git repo (if I use one).
 
 ## Acceptance Criteria
-- [ ] **Shadow Repo:** A valid git repository exists in `.kilonote/checkpoints`.
+- [ ] **Shadow Repo:** A valid git repository exists in `.obsidian-agent/checkpoints`.
 - [ ] **Commit per Action:** Every successful write tool execution results in a commit with a descriptive message (e.g., "Agent: Updated Project.md").
 - [ ] **Isolation:** The shadow repo ignores `.git` and other critical system folders to avoid nested repo issues.
 - [ ] **Restore Action:** A UI action allows reverting a specific file to the previous commit hash for that file.

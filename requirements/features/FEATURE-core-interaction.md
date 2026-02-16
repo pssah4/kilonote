@@ -3,7 +3,7 @@ Priority: P0
 Related Epic: `requirements/epics/EPIC-core-engine.md`
 
 ## Description
-The primary interface for Kylo Note is a sidebar Chat View where users interact with "Modes" (Agent Personas). Each Mode has access to a specific set of tools and a specific system prompt context, enabling specialized behaviors (e.g., "Architect" for structure, "Writer" for content).
+The primary interface for Obsidian Agent is a sidebar Chat View where users interact with "Modes" (Agent Personas). Each Mode has access to a specific set of tools and a specific system prompt context, enabling specialized behaviors (e.g., "Architect" for structure, "Writer" for content).
 
 ## Benefits Hypothesis
 - Modes reduce prompt engineering overhead for users (specialized agents > generic agents).
@@ -21,7 +21,7 @@ The primary interface for Kylo Note is a sidebar Chat View where users interact 
 - [ ] **Context Injection:** When a file is active, the agent is aware of its content (or path) if requested.
 - [ ] **Mentions:** Typing `@` triggers a file search; selecting a file adds its content/path to the context window.
 - [ ] **Chat History:** Conversation history persists within the session (or per note, depending on UX decision - assume session for MVP).
-- [ ] **Follow-up Suggestions:** After the agent responds, Kylo Note can present 2–4 suggested next prompts.
+- [ ] **Follow-up Suggestions:** After the agent responds, Obsidian Agent can present 2–4 suggested next prompts.
 - [ ] **Task Resume:** Users can resume the last task/session from persisted state.
 - [ ] **Tool Call Timeline:** Tool executions are displayed as structured cards in the transcript (tool name + inputs + result summary).
 

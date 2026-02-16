@@ -1,14 +1,14 @@
-# Kylo Note – Product Vision
+# Obsidian Agent – Product Vision
 
 ## 1. Vision
 
-Kylo Note ist eine agentische Betriebsschicht für Obsidian.
+Obsidian Agent ist eine agentische Betriebsschicht für Obsidian.
 
 Es überträgt die Architektur- und Interaktionsprinzipien von Kilo Code
 (Tool-Use, Orchestrator, Approval-System, Modes, Checkpoints)
 auf den Kontext von Wissensarbeit in Markdown-Vaults.
 
-Kylo Note ist nicht nur ein Schreibassistent,
+Obsidian Agent ist nicht nur ein Schreibassistent,
 sondern ein kontrollierter Vault-Operator.
 
 ---
@@ -27,7 +27,7 @@ Wissensarbeit in Obsidian leidet unter:
 
 ## 3. Zielbild
 
-Kilo. Note ermöglicht:
+Obsidian Agent ermöglicht:
 
 - Agentische Bearbeitung von Notes
 - Sichere Vault-Operationen mit Approval

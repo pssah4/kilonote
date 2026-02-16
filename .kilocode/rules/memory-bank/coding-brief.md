@@ -41,7 +41,7 @@ Build a local-only, agentic operating layer for Obsidian that clones the "Kilo C
 
 ## Acceptance criteria (top-level)
 - [ ] **Safety:** Any write operation (Internal or MCP) must trigger an approval prompt UNLESS explicitly auto-approved.
-- [ ] **Restore:** Every approved write must create a git commit in `.kilonote/checkpoints`.
+- [ ] **Restore:** Every approved write must create a git commit in `.obsidian-agent/checkpoints`.
 - [ ] **Context:** Agent automatically sees the content of the active file.
 - [ ] **Performance:** UI remains responsive during indexing/tool execution.
 

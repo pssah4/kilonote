@@ -1,7 +1,7 @@
 # Requirements Engineering Log
 
 ## Gap Analysis Scope
-Target: Compare Kylo Note requirements against `origin/forked-kilocode` branch feature surface.
+Target: Compare Obsidian Agent requirements against `origin/forked-kilocode` branch feature surface.
 
 ## Evidence / Inputs
 - File inventory (remote branch): `requirements/forked-kilocode-filetree.md`
@@ -24,4 +24,4 @@ The forked codebase includes explicit components for:
 - Autocomplete (inline + chat textarea)
 - Task persistence/resume and follow-up suggestions
 
-(Next step: translate into Kylo Note-relevant requirements.)
+(Next step: translate into Obsidian Agent-relevant requirements.)

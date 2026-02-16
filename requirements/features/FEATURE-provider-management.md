@@ -26,11 +26,11 @@ A centralized system for managing LLM providers (OpenAI, Anthropic, Gemini, Open
   - per task
   - per session
   - per day (optional)
-- [ ] **Rate Limit Handling:** If a provider returns rate limit or quota errors, Kylo Note:
+- [ ] **Rate Limit Handling:** If a provider returns rate limit or quota errors, Obsidian Agent:
   - shows a clear error message
   - optionally retries with backoff
   - can suggest switching provider/model
-- [ ] **Fallback Model (optional):** If the current model is unavailable/out-of-quota, Kylo Note can route to a configured fallback model (user-approved).
+- [ ] **Fallback Model (optional):** If the current model is unavailable/out-of-quota, Obsidian Agent can route to a configured fallback model (user-approved).
 
 ## Success Criteria
 - SC-01: Switching providers takes effect immediately without reload.

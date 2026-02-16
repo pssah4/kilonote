@@ -3,7 +3,7 @@ Priority: P1
 Related Epic: `requirements/epics/EPIC-core-engine.md`
 
 ## Description
-Kylo Note provides a built-in **Browser Tool** capability that allows the agent to:
+Obsidian Agent provides a built-in **Browser Tool** capability that allows the agent to:
 - open a controlled web session (view-only or interaction-limited), and
 - fetch/summarize the contents of a URL into context.
 
@@ -23,7 +23,7 @@ This is included to match “Kilo Code” style tool sets (e.g., browser action 
 - [ ] **Browser Session:** Agent can request a browser session for interactive browsing when enabled.
 - [ ] **Approval:** Any external navigation or content fetch is governed by Approval Safety.
 - [ ] **Visibility:** Browser actions appear as tool cards in the chat transcript (URL, action, result/summary).
-- [ ] **Privacy Guardrails:** Kylo Note warns when sending page content to a cloud provider.
+- [ ] **Privacy Guardrails:** Obsidian Agent warns when sending page content to a cloud provider.
 - [ ] **Mode Gating:** Browser tool can be enabled only for specific modes (e.g., Researcher).
 
 ## Success Criteria

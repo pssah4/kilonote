@@ -1,4 +1,4 @@
-# Business Analysis: Kylo Note (Obsidian Agentic Vault Operator)
+# Business Analysis: Obsidian Agent (Obsidian Agentic Vault Operator)
 Status: Draft
 Scope: C (MVP)
 Date: 2026-02-16
@@ -18,7 +18,7 @@ Provide an agentic “operating layer” inside Obsidian that uses controlled ac
 
 ## 2. Business Context
 ### 2.1 Background
-Kylo Note transfers the interaction and governance patterns of Kilo Code (tool-use, orchestrator, approval, modes, checkpoints) into Obsidian vault-based knowledge work.
+Obsidian Agent transfers the interaction and governance patterns of Kilo Code (tool-use, orchestrator, approval, modes, checkpoints) into Obsidian vault-based knowledge work.
 
 **Source-of-truth note:** The task request references `/docs/*.md`, but the workspace contains equivalent source documents under `/context/*.md` (e.g., `context/01_product-vision.md`, `context/02_capability-scope.md`, `context/03_research-findings.md`, `context/04_decisions-adrs.md`, `context/05_constraints-nfrs.md`, `context/06_user-flows.md`, `context/08_deep-research-consolidated.md`). This analysis is grounded in those files, especially the binding feasibility constraints in `context/08_deep-research-consolidated.md`.
 
@@ -86,8 +86,8 @@ Persona:
 - Approval-by-default for any write/side-effect operation
 - Snapshot/checkpoint before write; diff + restore available
 - Logging of all tool actions
-- Ignore system (`.kilonoteignore`)
-- Checkpoints implemented via isomorphic-git shadow repo under `.kilonote/checkpoints`
+- Ignore system (`.obsidian-agentignore`)
+- Checkpoints implemented via isomorphic-git shadow repo under `.obsidian-agent/checkpoints`
 - No direct internal Graph manipulation; any graph view is a projection based on accessible signals
 - Canvas JSON manipulation is allowed (Canvas creation via `.canvas` JSON)
 
@@ -132,7 +132,7 @@ Persona:
 | Canvas JSON format changes or edge cases break generation | M | M | Keep Canvas operations isolated; validate JSON; version-guard |
 | Performance issues on large vaults (indexing/search) | M/H | H | Performance gates; incremental indexing; user controls; benchmarking |
 | Command execution enables unintended side effects | M | H | Approval-by-default; allowlist/categorization; clear previews |
-| Checkpoint system overhead or repo corruption | M | H | Treat checkpoint as first-class; test restore; protect `.kylonote/checkpoints` |
+| Checkpoint system overhead or repo corruption | M | H | Treat checkpoint as first-class; test restore; protect `.obsidian-agent/checkpoints` |
 | PDFs / binary attachments in “Research -> Synthesis” flow not feasible | M | M | Clarify scope: notes-first; treat PDF ingestion as optional/deferred |
 
 ## 9. High-level Capability Candidates (for RE)
@@ -140,7 +140,7 @@ Persona:
 |---|---|---|
 | P0 (MUST) | Approval system (approval-by-default; optional auto-approve categories) | Core safety and trust boundary |
 | P0 (MUST) | Checkpoints per tool action (diff + restore) | Prevents irreversible AI edits; enables rollback |
-| P0 (MUST) | Operation logging + ignore system (`.kylonoteignore`) | Auditability + safety + controllable scope |
+| P0 (MUST) | Operation logging + ignore system (`.obsidian-agentignore`) | Auditability + safety + controllable scope |
 | P0 (MUST) | Sidebar chat + modes | Primary user interaction model; reusable “agent personas” |
 | P0 (MUST) | Read/write/inline editing tools (vault notes) | Core value: controlled vault operator |
 | P0 (MUST) | Vault CRUD + bounded command execution (approved) | Enables safe operations beyond text generation |
@@ -166,7 +166,7 @@ Persona:
 ## 11. Handoff to Orchestrator (mandatory)
 ### What is decided
 - Desktop-first, local-only, BYO-model, approval-by-default are binding.
-- isomorphic-git checkpoint system in `.kilonote/checkpoints` is binding.
+- isomorphic-git checkpoint system in `.obsidian-agent/checkpoints` is binding.
 - No internal Graph manipulation; Canvas JSON generation is the supported projection mechanism.
 - Bases automation is high-risk and must be V2/deferred.
 
@@ -191,6 +191,6 @@ Persona:
 - Next step: switch to Requirements Engineer
 
 ## Memory Update Suggestions (stable facts only)
-- Add non-negotiables as stable project constraints: desktop-first, local-only, approval-by-default, snapshot-before-write, operation logging, `.kilonoteignore`, isomorphic-git checkpoints in `.kilonote/checkpoints`.
+- Add non-negotiables as stable project constraints: desktop-first, local-only, approval-by-default, snapshot-before-write, operation logging, `.obsidian-agentignore`, isomorphic-git checkpoints in `.obsidian-agent/checkpoints`.
 - Add explicit out-of-scope constraints: no internal Graph manipulation; no core-plugin deep hooks; no full UI automation; no cloud backend.
 - Add sequencing guardrail: Bases automation is V2/high-risk; Canvas is feasible via JSON; Graph views must be projections only.

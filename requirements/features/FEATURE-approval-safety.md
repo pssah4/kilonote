@@ -17,10 +17,10 @@ A centralized system that intercepts every tool action intended to modify the va
 ## Acceptance Criteria
 - [ ] **Interception:** ALL write operations (file write, delete, move, create dir) MUST pause for approval, UNLESS explicitly auto-approved by user configuration.
 - [ ] **Auto-Approval Config:** Users can define categories of actions (e.g., "Safe Reads", "Create in /Inbox") that bypass manual approval.
-- [ ] **Auto-Approval Limits:** Kylo Note enforces configurable safety limits, e.g.:
+- [ ] **Auto-Approval Limits:** Obsidian Agent enforces configurable safety limits, e.g.:
   - max auto-approved actions per task/session
   - max consecutive tool calls without user confirmation
-  When exceeded, Kylo Note must request explicit user approval.
+  When exceeded, Obsidian Agent must request explicit user approval.
 - [ ] **Proposal UI:** The chat interface displays a "Tool Use Request" card showing: Tool Name, Target File, Operation Type.
 - [ ] **Action Buttons:** Clear "Approve", "Reject", and "Always Allow this Tool" buttons.
 - [ ] **Reject Handling:** The agent receives a "User Rejected" error/signal and can attempt recovery or stop.

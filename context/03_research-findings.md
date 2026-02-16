@@ -44,9 +44,9 @@ Graph:
 
 Kilo Code nutzt Shadow Git Repo.
 
-Kylo Note:
+Obsidian Agent:
 - isomorphic-git
-- internes Repo in `.kilonote/checkpoints`
+- internes Repo in `.obsidian-agent/checkpoints`
 - Commit pro Tool-Action
 - Diff + Restore
 - Keine externe Git-Abhängigkeit

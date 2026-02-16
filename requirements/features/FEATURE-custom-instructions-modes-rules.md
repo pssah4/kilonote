@@ -3,7 +3,7 @@ Priority: P0
 Related Epic: `requirements/epics/EPIC-core-engine.md`
 
 ## Description
-Kylo Note must support user-configurable prompting and governance layers that shape how the agent behaves across all interactions.
+Obsidian Agent must support user-configurable prompting and governance layers that shape how the agent behaves across all interactions.
 
 This includes:
 - **Custom Instructions (global):** persistent, user-authored instructions applied to every task.
@@ -33,7 +33,7 @@ This feature exists to achieve parity with “Kilo Code”-style control surface
 - [ ] **Custom Modes CRUD:** User can create, edit, duplicate, and delete custom modes.
 - [ ] **Tool Allow-List per Mode:** Each mode defines which tools can be called.
 - [ ] **Import/Export:** Users can export/import Modes + instructions (JSON is sufficient for MVP).
-- [ ] **Workspace/Vault Rules Discovery:** If a well-known rules path exists (e.g., `.kilocode/rules/**` or a configurable vault folder), Kylo Note loads these rules and surfaces them in the “Active Context / System” panel.
+- [ ] **Workspace/Vault Rules Discovery:** If a well-known rules path exists (e.g., `.kilocode/rules/**` or a configurable vault folder), Obsidian Agent loads these rules and surfaces them in the “Active Context / System” panel.
 - [ ] **Safety:** Rules that restrict writes MUST be enforced by the tool interception layer (cannot be bypassed by prompt).
 
 ## Success Criteria
@@ -42,7 +42,7 @@ This feature exists to achieve parity with “Kilo Code”-style control surface
 
 ## NFRs (quantified)
 - **Prompt Build Time:** Prompt assembly adds < 50ms overhead per request.
-- **Stability:** Malformed rules/config files do not crash the plugin; Kylo Note falls back to defaults.
+- **Stability:** Malformed rules/config files do not crash the plugin; Obsidian Agent falls back to defaults.
 
 ## ASRs
 - 🟡 **ASR-CUST-01: Deterministic Prompt Composition**

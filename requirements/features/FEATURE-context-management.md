@@ -20,8 +20,8 @@ Mechanisms to give the agent awareness of the user's IDE state: currently open t
 - [ ] **Open Tabs Context:** Agent has access to the *list* of open files (paths) in the workspace.
 - [ ] **Context UI:** Visual indicator of what files are currently in the context window.
 - [ ] **Token Management:** Smart truncation/warning if open files exceed context window.
-- [ ] **Context Condensing:** Kylo Note can summarize/condense prior context into a shorter form when approaching model limits, while preserving key constraints and user decisions.
-- [ ] **Truncation Transparency:** When content is truncated/condensed, Kylo Note shows what was removed and why (at least: “truncated due to token budget”).
+- [ ] **Context Condensing:** Obsidian Agent can summarize/condense prior context into a shorter form when approaching model limits, while preserving key constraints and user decisions.
+- [ ] **Truncation Transparency:** When content is truncated/condensed, Obsidian Agent shows what was removed and why (at least: “truncated due to token budget”).
 - [ ] **Source Types:** Context sources include (where available):
   - active editor content
   - pinned notes/files

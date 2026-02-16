@@ -1,4 +1,4 @@
-# RE → Architect Handoff - Kylo Note
+# RE → Architect Handoff - Obsidian Agent
 Scope: C (MVP - Clone)
 Date: 2026-02-16
 
@@ -12,7 +12,7 @@ Date: 2026-02-16
 
 ## Top Success Criteria (3-5)
 1. **Safety:** 100% of write operations (Internal or MCP) require user approval (default).
-2. **Revert:** Every action creates a git commit in `.kilonote/checkpoints`.
+2. **Revert:** Every action creates a git commit in `.obsidian-agent/checkpoints`.
 3. **Extensibility:** Can connect to standard MCP servers (stdio).
 4. **Context:** Agent "sees" the active Obsidian file automatically.
 
@@ -54,7 +54,7 @@ Upstream capabilities that are now explicitly captured in requirements:
 - Follow-up suggestions + task resume: updated in `requirements/features/FEATURE-core-interaction.md`
 - Auto-approval limits: updated in `requirements/features/FEATURE-approval-safety.md`
 
-Upstream capabilities intentionally not pulled into Kylo Note MVP (local-only Obsidian scope):
+Upstream capabilities intentionally not pulled into Obsidian Agent MVP (local-only Obsidian scope):
 - Team/cloud billing and org dashboards
 - Full IDE autocomplete/inline completion stack
 - Telemetry/analytics pipelines (may be added later)

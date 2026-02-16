@@ -3,7 +3,7 @@ Priority: P0
 Related Epic: `requirements/epics/EPIC-vault-ops.md`
 
 ## Description
-Since direct access to the internal Obsidian Graph is blocked, Kylo Note generates "Graph Projections" by creating `.canvas` files. The agent can arrange notes, draw connections, and group items visually on a 2D plane based on semantic or explicit relationships.
+Since direct access to the internal Obsidian Graph is blocked, Obsidian Agent generates "Graph Projections" by creating `.canvas` files. The agent can arrange notes, draw connections, and group items visually on a 2D plane based on semantic or explicit relationships.
 
 ## Benefits Hypothesis
 - Visualizing complex topics (e.g., "Research on X") helps users spot gaps and connections.

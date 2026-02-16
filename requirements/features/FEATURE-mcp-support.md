@@ -3,10 +3,10 @@ Priority: P1
 Related Epic: `requirements/epics/EPIC-core-engine.md`
 
 ## Description
-Implements the Model Context Protocol (MCP) Client within Kylo Note. This allows the agent to connect to external MCP servers (running locally or remotely) to extend its toolset beyond the built-in Obsidian operations.
+Implements the Model Context Protocol (MCP) Client within Obsidian Agent. This allows the agent to connect to external MCP servers (running locally or remotely) to extend its toolset beyond the built-in Obsidian operations.
 
 ## Benefits Hypothesis
-- **Extensibility:** Users can give the agent access to external data (Postgres, Linear, GitHub, Google Drive) without Kylo Note needing native integrations for each.
+- **Extensibility:** Users can give the agent access to external data (Postgres, Linear, GitHub, Google Drive) without Obsidian Agent needing native integrations for each.
 - **Ecosystem:** Leverages the growing ecosystem of MCP servers.
 - **Customization:** Users can write their own simple MCP servers (e.g., python scripts) to give the agent specific capabilities.
 
@@ -17,7 +17,7 @@ Implements the Model Context Protocol (MCP) Client within Kylo Note. This allows
 
 ## Acceptance Criteria
 - [ ] **Settings UI:** Interface to add/remove MCP server configurations (name, create command, env vars).
-- [ ] **Client Implementation:** Kylo Note connects to configured servers on startup/demand.
+- [ ] **Client Implementation:** Obsidian Agent connects to configured servers on startup/demand.
 - [ ] **Tool Registration:** Tools exposed by MCP servers appear in the agent's context.
 - [ ] **Resource Access:** Agent can read resources exposed by MCP servers.
 - [ ] **Transports:** Supports at least stdio-based local servers for MVP; SSE/HTTP is a P1/P2 extension.

@@ -1,4 +1,4 @@
-# Requirements Overview - Kylo Note
+# Requirements Overview - Obsidian Agent
 Scope: C (MVP - Clone)
 Date: 2026-02-16
 
@@ -57,7 +57,7 @@ Build a local-only, agentic operating layer for Obsidian that clones the "Kilo C
 
 ## ASR Summary (critical first)
 🔴 **ASR-01: Isomorphic-Git Integration**
-- Must implement a shadow git repository within `.kylonote/checkpoints`.
+- Must implement a shadow git repository within `.obsidian-agent/checkpoints`.
 
 🔴 **ASR-02: Tool-Use Interception Layer**
 - Architecture must force all tool executions (Internal OR MCP) through a central governance handler.

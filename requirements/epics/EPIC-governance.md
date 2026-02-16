@@ -13,7 +13,7 @@ Enforcing strict "approval-by-default" and mandatory local checkpoints transform
 - Approval System (UI for proposed actions)
 - Operation Logging (History of all tool calls)
 - Checkpoint System (Diff, Commit, Restore)
-- Ignore System (`.kilonoteignore`)
+- Ignore System (`.obsidian-agentignore`)
 
 ## Out of scope
 - Advanced Git conflict resolution UI (CLI fallback expected)

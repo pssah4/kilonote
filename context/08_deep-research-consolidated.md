@@ -1,4 +1,4 @@
-# Kylo Note – Konsolidierte Deep Research Ergebnisse
+# Obsidian Agent – Konsolidierte Deep Research Ergebnisse
 
 ## Ziel dieses Dokuments
 
@@ -7,7 +7,7 @@ Dieses Dokument konsolidiert die Ergebnisse aus zwei Deep-Research-Analysen:
 1. Analyse von KiloCode (Architektur, Tool-System, Orchestrator, Checkpoints)
 2. Analyse der Obsidian Plugin API und aller Core-Plugins hinsichtlich Machbarkeit eines agentischen Vault-Operators
 
-Ziel ist die technische und strategische Bewertung der Umsetzbarkeit von Kylo Note.
+Ziel ist die technische und strategische Bewertung der Umsetzbarkeit von Obsidian Agent.
 
 ---
 
@@ -27,7 +27,7 @@ KiloCode basiert auf folgenden Kernmustern:
 - Indexing + Retrieval
 - Konfigurierbare Model Provider
 
-Diese Prinzipien sind konzeptionell vollständig auf Kylo Note übertragbar.
+Diese Prinzipien sind konzeptionell vollständig auf Obsidian Agent übertragbar.
 
 ---
 
@@ -75,9 +75,9 @@ Merkmale:
 - Diff & Restore
 - Snapshot Isolation
 
-Kylo Note Entscheidung:
+Obsidian Agent Entscheidung:
 → isomorphic-git
-→ internes Repo in `.kilonote/checkpoints`
+→ internes Repo in `.obsidian-agent/checkpoints`
 → kein externes Git erforderlich
 
 ---
@@ -262,14 +262,14 @@ Nicht möglich:
 
 ---
 
-# 6. Checkpoint System (Kylo Note)
+# 6. Checkpoint System (Obsidian Agent)
 
 Entscheidung:
 
 isomorphic-git
 
 Struktur:
-`.kilonote/checkpoints`
+`.obsidian-agent/checkpoints`
 
 Pro Tool-Action:
 - Identify changed files
@@ -317,7 +317,7 @@ Risiko-Bereiche:
 
 # 9. Strategische Bewertung
 
-Kylo Note ist:
+Obsidian Agent ist:
 
 - Keine einfache AI-Integration
 - Sondern eine agentische Betriebsschicht

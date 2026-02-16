@@ -17,7 +17,7 @@ A local-only vector database that indexes the vault's markdown content to enable
 ## Acceptance Criteria
 - [ ] **Indexing:** A background process iterates over markdown files, chunks them, and generates embeddings locally.
 - [ ] **Retrieval:** A tool `search_semantic` accepts a query string and returns relevant chunks/files with similarity scores.
-- [ ] **Data Persistence:** The index is stored locally (e.g., in `.kilonote/index`) and persists across restarts.
+- [ ] **Data Persistence:** The index is stored locally (e.g., in `.obsidian-agent/index`) and persists across restarts.
 - [ ] **Vector Model:** Uses a small, high-quality local embedding model (e.g., standard ONNX model) compatible with consumer hardware.
 
 ## Success Criteria

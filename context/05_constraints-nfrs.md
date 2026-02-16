@@ -5,6 +5,6 @@
 - Approval required
 - Snapshot before write
 - Logging aller Tool Actions
-- Ignore File: `.kilonoteignore`
+- Ignore File: `.obsidian-agentignore`
 - Performance bei großen Vaults
 - Keine Datenkorruption
